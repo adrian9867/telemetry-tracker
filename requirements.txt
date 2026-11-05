@@ -1,0 +1,23 @@
+# Project dependencies. Nothing here is pinned yet: pin the exact versions
+# after the first successful install on your Windows machine and record that
+# date in DATA_LOG.md (5A.5 version freeze: the code should not drift during
+# Phase 0 without a logged reason).
+
+# M1: needed now
+pytest            # test runner
+tzdata            # REQUIRED on Windows: zoneinfo has no system tz database there
+
+# M2: tracker
+psutil
+pywin32 ; sys_platform == "win32"    # win32gui / win32process
+
+# M4, M7, M8: data
+pandas
+
+# M9: dashboard
+streamlit
+
+# M10 / M11: API collectors
+requests
+google-auth-oauthlib
+google-api-python-client

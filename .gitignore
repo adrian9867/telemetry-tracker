@@ -1,0 +1,18 @@
+# Data and secrets stay out of Git.
+data/
+*.db
+*.db-wal
+*.db-shm
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+venv/
+.venv/
+
+# Logs and exports
+*.log
+
+md/
